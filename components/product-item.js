@@ -1,3 +1,5 @@
+// product-item.js
+
 class ProductItem extends HTMLElement {
   constructor() {
     super()
@@ -16,8 +18,7 @@ class ProductItem extends HTMLElement {
     titleTag.setAttribute('class', 'title')
 
     const priceTag = wrapper.appendChild(document.createElement('p'))
-    const price = this.getAttribute('price')
-    priceTag.textContent = `$${price}`
+    priceTag.textContent = this.getAttribute('price')
     priceTag.setAttribute('class', 'price')
 
     const countSpan = document.getElementById('cart-count')
@@ -54,7 +55,7 @@ class ProductItem extends HTMLElement {
 
     // Apply external styles to the shadow dom
     const linkElem = document.createElement('link')
-    linkElem.setAttribute('rel', './styles/style.css')
+    linkElem.setAttribute('rel', 'stylesheet')
     linkElem.setAttribute('href', './styles/style.css')
 
     shadowDom.append(linkElem)
@@ -62,8 +63,4 @@ class ProductItem extends HTMLElement {
   }
 }
 
-<<<<<<< HEAD
 customElements.define('product-item', ProductItem)
-=======
-customElements.define('product-item', ProductItem)
->>>>>>> a297de5e60fb9581e4f55d0c2efaa698a6f05b1e

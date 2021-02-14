@@ -1,3 +1,5 @@
+// Script.js
+
 window.addEventListener('DOMContentLoaded', () => {
   const itemsInCart = window.localStorage.getItem('itemsInCart')
 
@@ -28,7 +30,13 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // //  localStorage("name", "number")
+  // //  localStorage.setItem("age", "30")
+  // //  localStorage.setItem("name", "domenic")
+  // //  console.log(localStorage.getItem("age"));
+
   // const myStorage = window.localStorage
   // myStorage.getItem()
   // myStorage.setItem('productList', JSON.stringify(productList))
 })
+
