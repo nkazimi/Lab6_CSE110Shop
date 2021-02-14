@@ -62,4 +62,8 @@ class ProductItem extends HTMLElement {
   }
 }
 
+<<<<<<< HEAD
 customElements.define('product-item', ProductItem)
+=======
+customElements.define('product-item', ProductItem)
+>>>>>>> a297de5e60fb9581e4f55d0c2efaa698a6f05b1e
